@@ -31,7 +31,7 @@ where
 
 If all these arguments are given to the class the gradients are calculated directly and stored in the property `GZeval`.
 
-
+In the case of an external computation of the responses, the sample points can be exported usind the property `XevalG` and the responses computed externally can be loaded using the method `loadZextG` (see for instance the ex
 
 
 Download
