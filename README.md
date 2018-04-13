@@ -2,7 +2,7 @@ gradFD
 =======
 **gradFD** is a class which can be used for computing the derivatives and hessians of a function using finite difference. Many schemes have been implemented. 
 
-Notice that the hessian computation remains incomplete and needs to be improved.
+_Notice that the hessian computation remains incomplete and needs to be improved._
 
 Features
 ------
@@ -27,7 +27,11 @@ Many example script have been proposed
 
 The following picture is the result of the execution of the `Example_plot2D_gradFD.m ` script:
 
-![GNU GPLv3](https://bytebucket.org/luclaurent/gradfd/raw/master/Plot2D.png)
+![Plot2D](https://bytebucket.org/luclaurent/gradfd/raw/master/Plot2D.png)
+
+The following picture is the result of the execution of the `Example_error_gradFD.m ` script:
+
+![PlotError](https://bytebucket.org/luclaurent/gradfd/raw/master/PlotError.png)
 
 Use of the class
 ------
