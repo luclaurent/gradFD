@@ -25,6 +25,10 @@ Many example script have been proposed
 * `Example_plot2D_gradFD.m`: plot derivatives compute on 2D function with the class
 * `Example_error_gradFD.m`: study of the error on derivatives vs the stepsize
 
+The following picture is the result of the execution of the `Example_plot2D_gradFD.m ` script:
+
+![GNU GPLv3](https://bytebucket.org/luclaurent/gradfd/raw/master/Plot2D.png)
+
 Use of the class
 ------
 The class could be call using the following syntax `gradFD(typeIn,XrefIn,stepsIn,funIn)`
