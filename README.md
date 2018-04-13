@@ -17,7 +17,13 @@ Features
 
 First start
 ------
-* example file: `Example_gradFD.m`
+Many example script have been proposed
+
+* `Example_basic_gradFD.m`: basic example of a classical use of the class
+* `Example_external_gradFD.m`: example of use of the external feature
+* `Example_plot1D_gradFD.m`: plot derivatives compute on 1D function with the class
+* `Example_plot2D_gradFD.m`: plot derivatives compute on 2D function with the class
+* `Example_error_gradFD.m`: study of the error on derivatives vs the stepsize
 
 Use of the class
 ------
