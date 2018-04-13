@@ -1,7 +1,7 @@
-%% diffGrad class for computing gradients using finite differences
+%% gradFD class for computing gradients using finite differences
 % L. LAURENT --  12/12/2017 -- luc.laurent@lecnam.net
 
-% diffGrad - A toolbox to compute derivatives and hessians using finite differences
+% gradFD - A toolbox to compute derivatives and hessians using finite differences
 % Copyright (C) 2018  Luc LAURENT <luc.laurent@lecnam.net>
 %
 % This program is free software: you can redistribute it and/or modify
@@ -18,7 +18,7 @@
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-classdef diffGrad < handle
+classdef gradFD < handle
     
     properties
         type='FD1';     % type of finite difference
@@ -47,17 +47,21 @@ classdef diffGrad < handle
         % - XrefIn: point on which the gradients will be calculated
         % - stepsIn: step(s) used for FD
         % - funIn: handle function (@(x) ...)
-        function obj=diffGrad(typeIn,XrefIn,stepsIn,funIn)
+        function obj=gradFD(typeIn,XrefIn,stepsIn,funIn)
             %activate or not demo mode
-            if nargin > 1
+            if nargin > 0
                 demo=false;
                 if isempty(typeIn)
                     demo=true;
                 else
                     obj.type=typeIn;
                 end
-                obj.Xref=XrefIn;
-                obj.stepsDiff=stepsIn;
+                if nargin>1
+                    obj.Xref=XrefIn;
+                end
+                if nargin>2
+                    obj.stepsDiff=stepsIn;
+                end
                 %
                 if nargin>3
                     obj.fun=funIn;

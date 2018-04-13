@@ -1,12 +1,12 @@
-diffGrad 
+gradFD 
 =======
-**diffGrad** is a class which can be used for computing the derivatives and hessians of a function using finite difference. Many schemes have been implemented. 
+**gradFD** is a class which can be used for computing the derivatives and hessians of a function using finite difference. Many schemes have been implemented. 
 
 Notice that the hessian computation remains incomplete and needs to be improved.
 
 Features
 ------
-**diffGrad** is able to 
+**gradFD** is able to 
 
 * Compute derivatives with the following schemes 
 	- forward and backward finite differences of order 1 to 5 (BDx and FDx with x={1,...,5})
@@ -17,17 +17,31 @@ Features
 
 First start
 ------
-* unConstrained problems: `Example_unConstrained.m`
+* example file: `Example_gradFD.m`
+
+Use of the class
+------
+The class could be call using the following syntax `gradFD(typeIn,XrefIn,stepsIn,funIn)`
+where
+
+* `typeIn` is the chosen schemes (the full list of finite difference schemes is available via the execution of `gradFD` with no option or via the method `displaySchemes`.
+* `XrefIn` is the array of points on which the gradient must be calculated.
+* `stepsIn` is the list of stepsizes used in every direction.
+* `funIn` is the handle function (defined using @()) [optional]
+
+If all these arguments are given to the class the gradients are calculated directly and stored in the property `GZeval`.
+
+
 
 
 Download
 ------
 
-The toolbox can be downloaded [here](https://bitbucket.org/luclaurent/diffGrad/downloads).
+The toolbox can be downloaded [here](https://bitbucket.org/luclaurent/gradfd/downloads).
 
 If you use `git`, you can clone the repository using the following command
 
-    git clone git@bitbucket.org:luclaurent/diffGrad.git diffGrad
+    git clone git@bitbucket.org:luclaurent/gradfd.git gradFD
 
 
 
@@ -37,7 +51,7 @@ If you use `git`, you can clone the repository using the following command
 License ![GNU GPLv3](http://www.gnu.org/graphics/gplv3-88x31.png)
 ----
 
-    diffGrad - A toolbox to compute derivatives and hessians using finite differences
+    gradFD - A toolbox to compute derivatives and hessians using finite differences
     Copyright (C) 2018  Luc LAURENT <luc.laurent@lecnam.net>
 
     This program is free software: you can redistribute it and/or modify
