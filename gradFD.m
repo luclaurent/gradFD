@@ -1,8 +1,8 @@
 %% diffGrad class for computing gradients using finite differences
 % L. LAURENT --  12/12/2017 -- luc.laurent@lecnam.net
 
-% optiGTest - set of testing functions    A toolbox to easy manipulate functions.
-% Copyright (C) 2017  Luc LAURENT <luc.laurent@lecnam.net>
+% diffGrad - A toolbox to compute derivatives and hessians using finite differences
+% Copyright (C) 2018  Luc LAURENT <luc.laurent@lecnam.net>
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -49,20 +49,24 @@ classdef diffGrad < handle
         % - funIn: handle function (@(x) ...)
         function obj=diffGrad(typeIn,XrefIn,stepsIn,funIn)
             %activate or not demo mode
-            demo=false;
-            if isempty(typeIn)
-                demo=true;
-            else
-                obj.type=typeIn;
-            end
-            obj.Xref=XrefIn;
-            obj.stepsDiff=stepsIn;
-            %
-            if nargin>3
-                obj.fun=funIn;
-                if demo
-                    obj.runDemo;
+            if nargin > 1
+                demo=false;
+                if isempty(typeIn)
+                    demo=true;
+                else
+                    obj.type=typeIn;
                 end
+                obj.Xref=XrefIn;
+                obj.stepsDiff=stepsIn;
+                %
+                if nargin>3
+                    obj.fun=funIn;
+                    if demo
+                        obj.runDemo;
+                    end
+                end
+            else
+               obj.displaySchemes; 
             end
             %
             %
@@ -182,6 +186,15 @@ classdef diffGrad < handle
                 nbT=nbCoef*obj.dim;
                 itX=nbT*(itS-1)+(1:nbT);
                 GZ(itS,:)=sum(prodZCoef(itX,:),1)./(divG*sDiff(itS,:));
+            end
+        end
+        %% show available schemes
+        function displaySchemes(obj)
+           %load list of available finite differences
+            listT=fieldnames(loadFD); 
+            fprintf('List of the available FD technics\n')
+            for itT=1:numel(listT)
+                fprintf([listT{itT} '\n']);
             end
         end
         %% run demo mode
