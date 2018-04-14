@@ -1,6 +1,6 @@
 gradFD 
 =======
-**gradFD** is a class which can be used for computing the derivatives and hessians of a function using finite difference. Many schemes have been implemented. 
+**gradFD** is a class which can be used for computing the derivatives and hessians of a function using finite differences. Many schemes have been implemented. 
 
 _Notice that the hessian computation remains incomplete and needs to be improved._
 
