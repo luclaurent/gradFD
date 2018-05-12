@@ -1,6 +1,6 @@
 gradFD 
 =======
-**gradFD** is a MATLAB/OCTAVE's class which can be used for computing the derivatives and hessians of a function using finite difference. Many schemes have been implemented. 
+**gradFD** is a MATLAB/OCTAVE's class which can be used for computing the derivatives and hessians of a function using finite differences. Many schemes have been implemented. 
 
 _Notice that the hessian computation remains incomplete and needs to be improved._
 
@@ -35,17 +35,17 @@ The following picture is the result of the execution of the `Example_error_gradF
 
 Use of the class
 ------
-The class could be call using the following syntax `gradFD(typeIn,XrefIn,stepsIn,funIn)`
+The class could be called using the following syntax `gradFD(typeIn,XrefIn,stepsIn,funIn)`
 where
 
-* `typeIn` is the chosen schemes (the full list of finite difference schemes is available via the execution of `gradFD` with no option or via the method `displaySchemes`.
+* `typeIn` is the chosen schemes (the full list of finite difference schemes is available via the execution of `gradFD` with no option or via the method `displaySchemes`).
 * `XrefIn` is the array of points on which the gradient must be calculated.
-* `stepsIn` is the list of stepsizes used in every direction.
+* `stepsIn` is the list of stepsizes used in every direction and/or every point.
 * `funIn` is the handle function (defined using @()) [optional]
 
 If all these arguments are given to the class the gradients are calculated directly and stored in the property `GZeval`.
 
-In the case of an external computation of the responses, the sample points can be exported usind the property `XevalG` and the responses computed externally can be loaded using the method `loadZextG` (see for instance the ex
+In the case of an external computation of the responses, the sample points can be exported usind the property `XevalG` and the responses computed externally can be loaded using the method `loadZextG` (see for instance the example `Example_external_gradFD.m`)
 
 
 Download
