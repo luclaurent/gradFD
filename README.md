@@ -1,5 +1,5 @@
 gradFD 
-=======
+
 **gradFD** is a MATLAB/OCTAVE's class which can be used for computing the derivatives and hessians of a function using finite differences. Many schemes have been implemented. 
 
 _Notice that the hessian computation remains incomplete and needs to be improved._
@@ -60,10 +60,6 @@ If you use `git`, you can clone the repository using the following command
 or
 
     git clone git@github.com:luclaurent/gradFD.git gradFD
-
-
-
-
 
 License ![GNU GPLv3](http://www.gnu.org/graphics/gplv3-88x31.png)
 ----
