@@ -1,5 +1,8 @@
 # gradFD 
 
+[![DOI](https://zenodo.org/badge/132956505.svg)](https://zenodo.org/badge/latestdoi/132956505)
+
+
 **gradFD** is a MATLAB/OCTAVE's class which can be used for computing the derivatives and hessians of a function using finite differences. Many schemes have been implemented. 
 
 _Notice that the hessian computation remains incomplete and needs to be improved._
