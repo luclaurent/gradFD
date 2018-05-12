@@ -1,6 +1,11 @@
 %% gradFD class for computing gradients using finite differences
 % L. LAURENT --  12/12/2017 -- luc.laurent@lecnam.net
 
+% sources could be found here:
+% https://bitbucket.com/luclaurent/gradFD
+% https://github.com/luclaurent/gradFD
+%
+
 % gradFD - A toolbox to compute derivatives and hessians using finite differences
 % Copyright (C) 2018  Luc LAURENT <luc.laurent@lecnam.net>
 %

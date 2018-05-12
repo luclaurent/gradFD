@@ -51,12 +51,15 @@ In the case of an external computation of the responses, the sample points can b
 Download
 ------
 
-The toolbox can be downloaded [here](https://bitbucket.org/luclaurent/gradfd/downloads).
+The toolbox can be downloaded [here](https://bitbucket.org/luclaurent/gradfd/downloads) or [here](https://github.com/luclaurent/gradfd/releases).
 
 If you use `git`, you can clone the repository using the following command
 
     git clone git@bitbucket.org:luclaurent/gradfd.git gradFD
 
+or
+
+    git clone git@github.com:luclaurent/gradFD.git gradFD
 
 
 
