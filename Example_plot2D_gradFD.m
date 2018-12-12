@@ -79,5 +79,5 @@ subplot(224)
 surf(X,Y,GZ2)
 xlabel('x','Interpreter','latex')
 ylabel('y','Interpreter','latex')
-zlabel('$\frac{\partial f}{\partial x_1}$','Interpreter','latex')
+zlabel('$\frac{\partial f}{\partial x_2}$','Interpreter','latex')
 
