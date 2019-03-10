@@ -51,13 +51,13 @@ gradA.Xref=[4 5;6 9; 4 5];
 gradA.GZeval
 
 %change stepsizes (one per points)
-gradA.stepsDiff=[1e-2;1e-3;1e-4];
+gradA.stepSizes=[1e-2;1e-3;1e-4];
 
 %extract derivatives
 gradA.GZeval
 
 %change stepsizes (one per direction)
-gradA.stepsDiff=[1e-2 1e-3];
+gradA.stepSizes=[1e-2 1e-3];
 
 %extract derivatives
 gradA.GZeval
