@@ -1,7 +1,7 @@
 # gradFD 
 
 [![GitHub license](https://img.shields.io/github/license/luclaurent/gradFD.svg)](https://github.com/luclaurent/gradFD/blob/master/LICENSE.md)
- [![Github Releases](https://img.shields.io/github/release/luclaurent/gradFD.svg)](https://github.com/luclaurent/gradFD/releases) [![DOI](https://zenodo.org/badge/132956505.svg)](https://zenodo.org/badge/latestdoi/132956505)
+ [![Github Releases](https://img.shields.io/github/release/luclaurent/gradFD.svg)](https://github.com/luclaurent/gradFD/releases) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1245934.svg)](https://doi.org/10.5281/zenodo.1245934)
 
 
 **gradFD** is a MATLAB/OCTAVE's class which can be used for computing the derivatives and hessians of a function using finite differences. Many schemes have been implemented. 
@@ -59,11 +59,13 @@ The toolbox can be downloaded [here](https://bitbucket.org/luclaurent/gradfd/dow
 
 If you use `git`, you can clone the repository using the following command
 
-    git clone git@bitbucket.org:luclaurent/gradfd.git gradFD
-
-or
 
     git clone git@github.com:luclaurent/gradFD.git gradFD
+
+Citing this toolbox [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1245934.svg)](https://doi.org/10.5281/zenodo.1245934)
+
+
+
 
 License ![GNU GPLv3](http://www.gnu.org/graphics/gplv3-88x31.png)
 ----
